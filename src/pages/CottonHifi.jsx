@@ -16,7 +16,14 @@ export default function CottonHifi() {
         productName="HIFI"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Mixture of Seaweed extract; Humic and Fulvic acid, Amino acids and Vitamins (Liquid)"
-        composition={[]}
+        composition={[
+          '(i)  Sargassum wightii extract per cent. by weight, minimum 20',
+          '(ii)  Glycine per cent. by weight, minimum 10',
+          '(iii) Potassium fulvic humate per cent. by weight, minimum (Source: Leonardite) 10',
+          '(iv)  Vitamin C per cent. by weight, minimum 2.0',
+          '(v)  Water per cent. by weight QS',
+          '(vi) Total (per cent.) 100'
+        ]}
         crops="Cotton"
         dosage="Two foliar applications at 2 l/ha"
       />

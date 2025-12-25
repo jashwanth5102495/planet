@@ -17,7 +17,15 @@ export default function TomatoMagic() {
         productName="MAGIC"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Mixture of Humic acid and Seaweed extract (Liquid)"
-        composition={[]}
+        composition={[
+          '(i)  Humic acid (Source: Leonardite) per cent. weight by volume, minimum 6',
+          '(ii)  Kappaphycus alvarezii and Sargassum swartzii in ratio of 1:1; liquid concentrate per cent. volume by volume, minimum 4',
+          '(iii) Propylparaben per cent. weight by volume, minimum as preservative 0.02',
+          '(iv)  Methyl paraben per cent. weight by volume, minimum as preservative 0.2',
+          '(v)  Potassium benzoate per cent. weight by volume, minimum 0.10',
+          '(vi)  Water per cent. by weight 89.68',
+          '(vii) Total (per cent.) 100'
+        ]}
         crops="Tomato"
         dosage="Three foliar applications at 1.25 l/ha"
       />

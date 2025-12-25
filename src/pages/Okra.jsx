@@ -17,7 +17,15 @@ export default function Okra() {
         productName="UPLUS"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Mixture of Humic Acid, Amino Acid, Vitamins and Bio-chemicals (powder)"
-        composition={[]}
+        composition={[
+          '(i)  Humic Acid per cent. by weight, minimum 30',
+          '(ii)  Amino Acid (Glycine) per cent. by weight , minimum 7',
+          '(iii)  Myoinositol per cent. by weight , minimum 2',
+          '(iv)  Vitamin C per cent by weight , minimum 12.0',
+          '(v)  Vitamin E per cent by weight , minimum 0.2',
+          '(vi)  pH (1% aqueous solution) 5.0 – 6.5',
+          '(vii)  Total organic carbon per cent by weight , minimum 25'
+        ]}
         crops="Okra"
         dosage="Two soil applications at 250g/ha"
       />

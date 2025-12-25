@@ -18,7 +18,11 @@ export default function GroundNut() {
         productName="FORCE"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Humates and Fulvates - 22% (Liquid)"
-        composition={['Humic Acid 14.925', 'Fulvic Acid 10.125', 'Organic Carbon 10.55']}
+        composition={[
+          '(i) Total water soluble humates and fulvates pe rcent. weight by volume, minimum 22',
+          '(ii) pH (1:5 aqueous solution) 9.0 (min)',
+          '(iii) Specific gravity 1.05'
+        ]}
         crops="Ground Nut"
         dosage="Two soil applications at 1.25 l/ha"
       />

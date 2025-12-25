@@ -19,7 +19,10 @@ export default function Paddy() {
         productName="HUMI-POWER"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Potassium Humate 49% (Powder)"
-        composition={['Humic Acid 21.0']}
+        composition={[
+          '(i) Humic Acid per cent. by weight minimum 21',
+          '(ii) pH (1 % aqueous solution) 6.0-8.0'
+        ]}
         crops="Paddy"
         dosage="One Soil application at 1 kg/ha"
       />

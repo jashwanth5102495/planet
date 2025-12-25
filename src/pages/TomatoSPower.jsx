@@ -16,7 +16,11 @@ export default function TomatoSPower() {
         productName="S POWER"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Mixture of Humic acid and Seaweed extract (Powder)"
-        composition={[]}
+        composition={[
+          '(i)  Humic acid powder as potassium humate (Source: Leonardite) per cent. by weight, minimum 80',
+          '(ii)  Kappaphycus alvarezii and Sargassum swartzii in ratio of 1:1; extract water soluble powder per cent. by weight, minimum 20',
+          '(iii) Total (per cent.) 100'
+        ]}
         crops="Tomato"
         dosage="Three foliar applications at 1.25 kg/ha"
       />

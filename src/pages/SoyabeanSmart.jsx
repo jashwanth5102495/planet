@@ -16,7 +16,14 @@ export default function SoyabeanSmart() {
         productName="SMART"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Protein hydrolysate (Amino acids 20 %) (Plant source) (Liquid)"
-        composition={[]}
+        composition={[
+          '(i)  Protein hydrolysate (Microbial fermentation) per cent. by weight, minimum',
+          'a. sugarbeet molasses and 87.1',
+          'b. corn/ wheat glucose syrups 12.4',
+          '(ii)  Octhilinone as preservatives per cent. by weight, minimum 0.3',
+          '(iii) Polysiloxanes as antifoam agent per cent. by weight, minimum 0.2',
+          '(iv) Total (per cent.) 100'
+        ]}
         crops="Soyabean"
         dosage="Two foliar applications at 2 l/ha"
       />

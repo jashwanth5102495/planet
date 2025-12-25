@@ -17,7 +17,14 @@ export default function Tomato() {
         productName="MAX"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Humic and Fulvic acid 76% (Powder)"
-        composition={[]}
+        composition={[
+          '(i)  Humic acid per cent. by weight, minimum (Source: Leonardite) 75',
+          '(ii)  Fulvic acid per cent. by weight, minimum 1',
+          '(iii) Potassium by weight, minimum 6',
+          '(iv)  Dextrose monohydrate per cent. by weight, minimum as stabilizer 8',
+          '(v)  Moisture 10',
+          '(vi) Total (per cent.) 100'
+        ]}
         crops="Tomato"
         dosage="Two foliar applications at 750 g/ha"
       />

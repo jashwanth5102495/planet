@@ -16,7 +16,12 @@ export default function TomatoVita() {
         productName="VITA"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Mixture of Humic acid and Seaweed extract (Granules)"
-        composition={[]}
+        composition={[
+          '(i)  Kappaphycus alvarezii and Sargassum swartzii in ratio of 1:1, extract per cent. by weight, minimum 3.3',
+          '(ii)  Humic acid powder as potassium humate (Source: Leonardite) per cent. by weight, minimum 1.0',
+          '(iii) Dolomite per cent. by weight, maximum 95.7',
+          '(iv) Total 100'
+        ]}
         crops="Tomato"
         dosage="Two soil applications at 25 kg/ha"
       />
