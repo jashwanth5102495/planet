@@ -1,4 +1,6 @@
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
+import StarBorder from './StarBorder';
+import './StarBorder.css';
 
 export default function ProductCard({
   brandName,
@@ -12,14 +14,13 @@ export default function ProductCard({
   dosage = '—',
 }) {
   return (
-    <motion.div
+    <Motion.div
       initial={{ opacity: 0, scale: 0.98 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6 }}
       className="relative z-10 max-w-xs sm:max-w-sm md:max-w-md w-full"
     >
-      {/* Outer card mimicking screenshot */}
-      <div className="glass-card rounded-3xl bg-white/20 backdrop-blur-xl border border-white/40 shadow-xl-soft overflow-hidden">
+      <div className="rounded-3xl">
         {/* Header brand title */}
         {brandName ? (
           <div className="px-6 sm:px-8 pt-4 sm:pt-5">
@@ -56,53 +57,67 @@ export default function ProductCard({
           </div>
         </div>
 
-        {/* Info sections matching screenshot style */}
+        {/* Info sections with dynamic numbering and order */}
         <div className="px-6 sm:px-8 pb-8 space-y-4">
-          {productName && (
-            <section className="rounded-2xl bg-black/12 text-white border border-white/25 p-4">
-              <p className="text-sm tracking-wide text-white/80">Product Name</p>
-              <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{productName}</p>
-            </section>
-          )}
+          {(() => {
+            const sections = [];
+            if (gazette) {
+              sections.push({
+                key: 'gazette',
+                label: 'Gazette Notification',
+                node: <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{gazette}</p>,
+              });
+            }
+            if (title) {
+              sections.push({
+                key: 'title',
+                label: 'Title of Bio Stimulant',
+                node: <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{title}</p>,
+              });
+            }
+            if (productName) {
+              sections.push({
+                key: 'product',
+                label: 'Product',
+                node: <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{productName}</p>,
+              });
+            }
+            sections.push({
+              key: 'composition',
+              label: 'Composition',
+              node:
+                composition?.length > 0 ? (
+                  <ul className="mt-2 space-y-2 list-disc pl-5 text-base sm:text-lg">
+                    {composition.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">—</p>
+                ),
+            });
+            sections.push({
+              key: 'crops',
+              label: 'Crops',
+              node: <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{crops}</p>,
+            });
+            sections.push({
+              key: 'dosage',
+              label: 'Dosage',
+              node: <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{dosage}</p>,
+            });
 
-          {gazette && (
-            <section className="rounded-2xl bg-black/12 text-white border border-white/25 p-4">
-              <p className="text-sm tracking-wide text-white/80">1. Gazette Notification</p>
-              <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{gazette}</p>
-            </section>
-          )}
-
-          {title && (
-            <section className="rounded-2xl bg-black/12 text-white border border-white/25 p-4">
-              <p className="text-sm tracking-wide text-white/80">2. Title of Bio Stimulant</p>
-              <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{title}</p>
-            </section>
-          )}
-
-          {composition?.length > 0 && (
-            <section className="rounded-2xl bg-black/12 text-white border border-white/25 p-4">
-              <p className="text-sm tracking-wide text-white/80">3. Composition</p>
-              <ul className="mt-2 space-y-2 list-disc pl-5 text-base sm:text-lg">
-                {composition.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-            </section>
-          )}
-
-          {/* Crops section (always render with placeholder if missing) */}
-          <section className="rounded-2xl bg-black/12 text-white border border-white/25 p-4">
-            <p className="text-sm tracking-wide text-white/80">4. Crops</p>
-            <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{crops}</p>
-          </section>
-
-          {/* Dosage section (always render with placeholder if missing) */}
-          <section className="rounded-2xl bg-black/12 text-white border border-white/25 p-4">
-            <p className="text-sm tracking-wide text-white/80">5. Dosage</p>
-            <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{dosage}</p>
-          </section>
+            return sections.map((s, idx) => (
+              <StarBorder key={s.key} className="w-full" color="cyan" speed="5s">
+                <p className="text-sm tracking-wide text-white/80">
+                  {idx + 1}. {s.label}
+                </p>
+                {s.node}
+              </StarBorder>
+            ));
+          })()}
         </div>
       </div>
-    </motion.div>
+    </Motion.div>
   );
 }

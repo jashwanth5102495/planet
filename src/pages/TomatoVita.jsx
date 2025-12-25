@@ -2,25 +2,23 @@ import BackgroundVideo from '../components/BackgroundVideo';
 import ProductCard from '../components/ProductCard';
 import IntroOverlay from '../components/IntroOverlay';
 
-export default function GroundNut() {
+export default function TomatoVita() {
   return (
     <div className="relative flex items-center justify-center min-h-screen px-3 sm:px-4 pt-12 sm:pt-14 pb-6 sm:pb-8">
       <BackgroundVideo />
-      {/* Subtle overlays for readability */}
       <div className="fixed inset-0 -z-20 bg-black/35 pointer-events-none"></div>
       <div className="animated-gradient-overlay fixed inset-0 -z-30 opacity-60 blur-2xl pointer-events-none"></div>
-
       <IntroOverlay />
       <ProductCard
         brandName=""
         companyName="Planet"
         logoSrc="/vib.mp4"
-        productName="FORCE"
+        productName="VITA"
         gazette="S.O.3922(E), Dated 12-9-2024"
-        title="Humates and Fulvates - 22% (Liquid)"
-        composition={['Humic Acid 14.925', 'Fulvic Acid 10.125', 'Organic Carbon 10.55']}
-        crops="Ground Nut"
-        dosage="Two soil applications at 1.25 l/ha"
+        title="Mixture of Humic acid and Seaweed extract (Granules)"
+        composition={[]}
+        crops="Tomato"
+        dosage="Two soil applications at 25 kg/ha"
       />
     </div>
   );

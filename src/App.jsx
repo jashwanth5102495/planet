@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import BackgroundVideo from './components/BackgroundVideo';
 import IntroOverlay from './components/IntroOverlay';
 
@@ -13,9 +13,9 @@ export default function App() {
 
       {/* Flipping logo header (small and centered) */}
       <div className="absolute top-4 sm:top-6 left-1/2 -translate-x-1/2 z-20">
-        <motion.img
+        <Motion.img
           src="/dark-logo.png"
-          alt="Green Plant Technologies"
+          alt="Planet"
           className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-lg shadow-2xl"
           initial={{ rotateY: 0 }}
           animate={{ rotateY: [0, 180, 0] }}
@@ -25,15 +25,13 @@ export default function App() {
       </div>
 
       {/* Main glassmorphism card */}
-      <motion.div
+      <Motion.div
         initial={{ opacity: 0, scale: 0.96 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="glass-box relative z-10 max-w-xs sm:max-w-sm md:max-w-md w-full"
+        className="relative z-10 max-w-xs sm:max-w-sm md:max-w-md w-full"
       >
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-green-700 tracking-wide drop-shadow-xl mb-2">
-          Green Plant Technologies
-        </h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-green-700 tracking-wide drop-shadow-xl mb-2">Planet</h1>
         {/* Optional glowing underline */}
         <IntroOverlay />
         
@@ -75,7 +73,7 @@ export default function App() {
             More Info
           </a>
         </div>
-      </motion.div>
+      </Motion.div>
     </div>
   );
 }

@@ -14,18 +14,14 @@ export default function Paddy() {
       <IntroOverlay />
       <ProductCard
         brandName=""
-        companyName="Green Plant Technologies"
+        companyName="Planet"
         logoSrc="/vib.mp4"
-        productName=""
+        productName="HUMI-POWER"
         gazette="S.O.3922(E), Dated 12-9-2024"
-        title="Sea Weed Extract of Sargassum tenerrimum 2% (Granular)"
-        composition={[
-          'Alginic Acid percent.by weight minimum : 0.2',
-          'pH (1:2 aqueous solution) : 6.0-8.5',
-          'Bulk density (g/cc) : 0.95-1.1',
-        ]}
+        title="Potassium Humate 49% (Powder)"
+        composition={['Humic Acid 21.0']}
         crops="Paddy"
-        dosage="One soil application at 12.5 kg/ha"
+        dosage="One Soil application at 1 kg/ha"
       />
     </div>
   );
