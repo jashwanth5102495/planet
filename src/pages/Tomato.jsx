@@ -15,6 +15,7 @@ export default function Tomato() {
         companyName="Planet"
         logoSrc="/vib.mp4"
         productName="MAX"
+        category="Humic Acid and Fulvic Acid  and their Derivatives"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Humic and Fulvic acid 76% (Powder)"
         composition={[

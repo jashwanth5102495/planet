@@ -15,6 +15,7 @@ export default function Okra() {
         companyName="Planet"
         logoSrc="/vib.mp4"
         productName="UPLUS"
+        category="Mixed Formulation"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Mixture of Humic Acid, Amino Acid, Vitamins and Bio-chemicals (powder)"
         composition={[

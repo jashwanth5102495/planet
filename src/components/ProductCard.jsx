@@ -12,6 +12,7 @@ export default function ProductCard({
   composition,
   crops = '—',
   dosage = '—',
+  category = 'Bio-stimulant',
 }) {
   return (
     <Motion.div
@@ -82,6 +83,11 @@ export default function ProductCard({
                 node: <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{productName}</p>,
               });
             }
+            sections.push({
+              key: 'category',
+              label: 'Category of Fertilizer',
+              node: <p className="mt-1 text-lg sm:text-xl md:text-2xl font-semibold">{category}</p>,
+            });
             sections.push({
               key: 'composition',
               label: 'Composition',

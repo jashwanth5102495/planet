@@ -17,6 +17,7 @@ export default function Paddy() {
         companyName="Planet"
         logoSrc="/vib.mp4"
         productName="HUMI-POWER"
+        category="Humic Acid and Fulvic Acid  and their Derivatives"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Potassium Humate 49% (Powder)"
         composition={[

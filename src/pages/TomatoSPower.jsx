@@ -14,6 +14,7 @@ export default function TomatoSPower() {
         companyName="Planet"
         logoSrc="/vib.mp4"
         productName="S POWER"
+        category="Mixed Formulation"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Mixture of Humic acid and Seaweed extract (Powder)"
         composition={[

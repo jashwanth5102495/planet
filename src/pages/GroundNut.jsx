@@ -16,6 +16,7 @@ export default function GroundNut() {
         companyName="Planet"
         logoSrc="/vib.mp4"
         productName="FORCE"
+        category="Humic Acid and Fulvic Acid  and their Derivatives"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Humates and Fulvates - 22% (Liquid)"
         composition={[

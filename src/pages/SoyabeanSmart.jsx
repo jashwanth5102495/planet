@@ -14,6 +14,7 @@ export default function SoyabeanSmart() {
         companyName="Planet"
         logoSrc="/vib.mp4"
         productName="SMART"
+        category="Protein Hydrolysates and Amino Acids"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Protein hydrolysate (Amino acids 20 %) (Plant source) (Liquid)"
         composition={[

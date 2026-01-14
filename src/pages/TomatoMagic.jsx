@@ -15,6 +15,7 @@ export default function TomatoMagic() {
         companyName="Planet"
         logoSrc="/vib.mp4"
         productName="MAGIC"
+        category="Mixed Formulation"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Mixture of Humic acid and Seaweed extract (Liquid)"
         composition={[

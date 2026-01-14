@@ -14,6 +14,7 @@ export default function CottonHifi() {
         companyName="Planet"
         logoSrc="/vib.mp4"
         productName="HIFI"
+        category="Mixed Formulation"
         gazette="S.O.3922(E), Dated 12-9-2024"
         title="Mixture of Seaweed extract; Humic and Fulvic acid, Amino acids and Vitamins (Liquid)"
         composition={[
